@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-labelledby="aboutTitle">
+  <title id="aboutTitle">Robb Granado photo placeholder</title>
+  <defs>
+    <linearGradient id="abg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1f3c"/>
+      <stop offset="100%" style="stop-color:#4B9CD3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#abg)"/>
+  <circle cx="300" cy="280" r="100" fill="rgba(255,255,255,0.1)"/>
+  <ellipse cx="300" cy="480" rx="160" ry="110" fill="rgba(255,255,255,0.07)"/>
+</svg>

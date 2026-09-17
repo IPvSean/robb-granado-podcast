@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ROBBCAST — Robb Granado sits down with interesting people about sports, fandom, Carolina, and the important local questions. Celebrities. Carolina. Complaints. Zip Lines.">
+  <meta name="theme-color" content="#7BAFD4">
+  <title>ROBBCAST — Celebrities. Carolina. Complaints. Zip Lines.</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ROBBCAST">
+  <meta property="og:description" content="Famous people. Serious fandom. Extremely local concerns.">
+  <meta property="og:site_name" content="ROBBCAST">
+  <!-- REPLACE OG IMAGE: swap og-cover.svg with assets/images/og-cover.jpg (1200×630) when ready -->
+  <meta property="og:image" content="assets/images/og-cover.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ROBBCAST">
+  <meta name="twitter:description" content="Celebrities. Carolina. Complaints. Zip Lines.">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div id="zip-line-overlay" class="zip-line-overlay" hidden aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" id="site-logo" aria-label="ROBBCAST home">ROBBCAST</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#beef">Robb's Beef</a></li>
+          <li><a href="#zip-line-index">Zip Line Index</a></li>
+          <li><a href="#about-robb">About Robb</a></li>
+          <li><a href="#watch" class="nav-cta">Watch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-dark" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Famous people. Serious fandom. Extremely local concerns.</p>
+          <h1 class="hero-title">ROBBCAST</h1>
+          <p class="hero-tagline">Celebrities. Carolina. Complaints. Zip Lines.</p>
+          <p class="hero-description">
+            Robb Granado sits down with interesting people to talk about what they're passionate about.
+            Eventually, they will discuss UNC football, Chapel Hill traffic, restaurants closing too early, or zip lines. Probably all four.
+          </p>
+          <div class="hero-actions">
+            <a href="#watch" class="btn btn-primary" id="hero-watch-latest">Watch Latest Episode</a>
+            <a href="#about-robb" class="btn btn-secondary">Meet Robb</a>
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <!-- ============================================================
+               REPLACE HERO IMAGE
+               Change the src below to your photo, e.g.:
+               src="assets/images/robb-hero.jpg"
+               ============================================================ -->
+          <img
+            src="assets/images/hero-placeholder.svg"
+            alt="Robb Granado — podcast host"
+            class="hero-image"
+            width="800"
+            height="800"
+            id="hero-host-image"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-featured" id="watch" aria-labelledby="featured-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="featured-heading">Latest Episode</h2>
+        <div id="featured-episode" class="featured-episode reveal"></div>
+      </div>
+    </section>
+
+    <section class="section section-segments" id="important-questions" aria-labelledby="segments-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="segments-heading">The Important Questions</h2>
+        <p class="section-lead reveal">Recurring segments. Unchanged priorities.</p>
+        <div class="segment-grid">
+          <article class="segment-card reveal">
+            <h3 class="segment-title">Robb's Beef of the Week</h3>
+            <p>Something in Chapel Hill has annoyed Robb. The public deserves to know.</p>
+          </article>
+          <article class="segment-card reveal">
+            <h3 class="segment-title">Carolina Corner</h3>
+            <p>UNC sports, fandom, coaching, recruiting, and whatever Carolina fans are arguing about this week.</p>
+          </article>
+          <article class="segment-card reveal">
+            <h3 class="segment-title">Why Is This Road Like This?</h3>
+            <p>Robb examines a piece of Chapel Hill transportation infrastructure and demands answers.</p>
+          </article>
+          <article class="segment-card reveal">
+            <h3 class="segment-title">Still Open?</h3>
+            <p>It's 8:37 PM. Robb wants dinner. Will Chapel Hill allow it?</p>
+          </article>
+          <article class="segment-card reveal segment-card-wide">
+            <h3 class="segment-title">Zip Line Check</h3>
+            <p>Every guest must answer the most important question in podcasting: &ldquo;Would this place be better with a zip line?&rdquo; The answer is usually yes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark section-meter" id="robb-o-meter" aria-labelledby="meter-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="meter-heading">The Robb-O-Meter</h2>
+        <div id="robb-o-meter-grid" class="meter-grid reveal"></div>
+        <p class="meter-footnote reveal">Updated whenever Robb's opinions change.</p>
+      </div>
+    </section>
+
+    <section class="section" id="episodes" aria-labelledby="episodes-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="episodes-heading">Episodes</h2>
+        <p class="section-lead reveal">Conversations that start somewhere respectable and end somewhere local.</p>
+        <div id="episodes-grid" class="episodes-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-editorial" id="beef" aria-labelledby="beef-heading">
+      <div class="container beef-layout">
+        <div class="beef-main reveal">
+          <h2 class="section-title" id="beef-heading">Robb's Current Beef</h2>
+          <article class="editorial-card">
+            <h3 class="editorial-title">Chapel Hill Restaurants Closing Too Early</h3>
+            <p>You're hungry. It's not even that late. You check the restaurant hours.</p>
+            <p class="editorial-punch">Closed.</p>
+            <p>Robb has questions.</p>
+            <a href="#watch" class="btn btn-primary" id="beef-argument-link">Hear the Argument</a>
+          </article>
+        </div>
+        <aside class="beef-sidebar reveal">
+          <h3 class="sidebar-title">Previous Beefs</h3>
+          <ul class="beef-list">
+            <li>Traffic near St. Thomas More</li>
+            <li>Left-turn lanes that aren't long enough</li>
+            <li>Restaurants closing while people are still hungry</li>
+            <li>Places that could clearly support a zip line but inexplicably don't have one</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-dark section-zip" id="zip-line-index" aria-labelledby="zip-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="zip-heading">The ROBBCAST Zip Line Index</h2>
+        <p class="section-lead reveal zip-subtitle">A scientific assessment of places that would be improved by a zip line.</p>
+        <div id="zip-line-list" class="zip-line-list reveal"></div>
+        <div class="methodology reveal">
+          <h3 class="methodology-title">Methodology</h3>
+          <p class="methodology-text">None whatsoever.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about-robb" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <h2 class="section-title" id="about-heading">Meet Robb</h2>
+          <p class="about-lead">Executive. Carolina fan. Podcaster. Traffic observer. Restaurant-hours critic. Zip line advocate.</p>
+          <p>Robb Granado has spent his career asking difficult questions.</p>
+          <p>ROBBCAST allows him to finally address the most difficult ones.</p>
+        </div>
+        <div class="about-photo reveal">
+          <!-- ============================================================
+               REPLACE ABOUT ROBB IMAGE
+               Change the src below to your photo, e.g.:
+               src="assets/images/robb-about.jpg"
+               ============================================================ -->
+          <img
+            src="assets/images/about-placeholder.svg"
+            alt="Robb Granado"
+            class="about-image"
+            width="600"
+            height="750"
+            id="about-robb-image"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">ROBBCAST</p>
+        <p class="footer-tagline">Celebrities. Carolina. Complaints. Zip Lines.</p>
+        <p class="footer-location">Recorded somewhere near Chapel Hill, North Carolina.</p>
+      </div>
+      <nav class="footer-social" aria-label="Social and podcast links">
+        <ul class="social-list" id="footer-social-links">
+          <li><a href="#" data-social="youtube">YouTube</a></li>
+          <li><a href="#" data-social="spotify">Spotify</a></li>
+          <li><a href="#" data-social="apple">Apple Podcasts</a></li>
+          <li><a href="#" data-social="instagram">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-disclaimer container">
+      ROBBCAST is an independent entertainment project and is not affiliated with the University of North Carolina or any businesses mentioned on this site.
+    </p>
+  </footer>
+</body>
+</html>
