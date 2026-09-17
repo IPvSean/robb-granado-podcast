@@ -23,6 +23,48 @@ const socialLinks = {
 };
 
 // ==============================
+// ROBB PHOTOS — UPDATE PATHS HERE
+// ==============================
+const robbPhotos = {
+  hero: "assets/images/profile_robb.png",
+  about: "assets/images/serious_robb.JPG",
+};
+
+// Extra photos shown in the About gallery (add paths under assets/images/)
+const aboutGallery = [
+  {
+    src: "assets/images/camo_robb.JPG",
+    alt: "Robb Granado in Carolina gear",
+    caption: "Carolina Corner, visual aid",
+  },
+  {
+    src: "assets/images/boil_robb.jpg",
+    alt: "Robb Granado at a seafood boil",
+    caption: "Field research: dinner hours",
+  },
+  {
+    src: "assets/images/workout_robb.JPG",
+    alt: "Robb Granado working out",
+    caption: "Traffic stress management",
+  },
+  {
+    src: "assets/images/nirvana_robb.jpg",
+    alt: "Robb Granado at a concert",
+    caption: "Zip line feasibility study",
+  },
+  {
+    src: "assets/images/fish_robb.jpg",
+    alt: "Robb Granado fishing",
+    caption: "Investigative reporting",
+  },
+  {
+    src: "assets/images/birthday_robb.JPG",
+    alt: "Robb Granado celebrating a birthday",
+    caption: "Another year of local concerns",
+  },
+];
+
+// ==============================
 // ROBBCAST EPISODES
 // ADD NEW EPISODES HERE (newest first for featured = episodes[0])
 // ==============================
@@ -36,7 +78,7 @@ const episodes = [
     description:
       "Robb sits down to discuss the state of Carolina football, the personalities surrounding the program, and why being a fan means caring deeply about things completely outside your control.",
     date: "March 1, 2026",
-    thumbnail: EPISODE_THUMB_DEFAULT,
+    thumbnail: "assets/images/camo_robb.JPG",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP001",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP001",
   },
@@ -47,7 +89,7 @@ const episodes = [
     description:
       "An honest conversation about dining hours, hunger, and the gap between when you're ready for dinner and when Chapel Hill says you're done.",
     date: "March 8, 2026",
-    thumbnail: EPISODE_THUMB_DEFAULT,
+    thumbnail: "assets/images/boil_robb.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP002",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP002",
   },
@@ -58,7 +100,7 @@ const episodes = [
     description:
       "Robb walks through an intersection that has opinions about everyone who uses it, and shares theories that deserve a town hall meeting.",
     date: "March 15, 2026",
-    thumbnail: EPISODE_THUMB_DEFAULT,
+    thumbnail: "assets/images/workout_robb.JPG",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP003",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP003",
   },
@@ -69,7 +111,7 @@ const episodes = [
     description:
       "A thoughtful look at recreational infrastructure, missed opportunities, and whether enthusiasm alone can justify more cables in the sky.",
     date: "March 22, 2026",
-    thumbnail: EPISODE_THUMB_DEFAULT,
+    thumbnail: "assets/images/nirvana_robb.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP004",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP004",
   },
@@ -80,7 +122,7 @@ const episodes = [
     description:
       "Engineering, politics, and the eternal question of why left turns feel personally offensive.",
     date: "March 29, 2026",
-    thumbnail: EPISODE_THUMB_DEFAULT,
+    thumbnail: "assets/images/fish_robb.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP005",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP005",
   },
@@ -255,6 +297,38 @@ function renderZipLineIndex() {
   `
     )
     .join("");
+}
+
+function applyRobbPhotos() {
+  const hero = document.getElementById("hero-host-image");
+  if (hero && robbPhotos.hero) {
+    hero.src = robbPhotos.hero;
+  }
+  const about = document.getElementById("about-robb-image");
+  if (about && robbPhotos.about) {
+    about.src = robbPhotos.about;
+  }
+}
+
+function renderAboutGallery() {
+  const wrap = document.getElementById("about-gallery");
+  if (!wrap || !aboutGallery.length) return;
+
+  wrap.innerHTML = `
+    <p class="about-gallery-title">On the record</p>
+    <div class="about-gallery">
+      ${aboutGallery
+        .map(
+          (item) => `
+        <figure class="gallery-figure">
+          <img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt)}" width="640" height="480" loading="lazy">
+          <figcaption>${escapeHtml(item.caption)}</figcaption>
+        </figure>
+      `
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function applySocialLinks() {
@@ -457,6 +531,8 @@ function initEasterEggs() {
 }
 
 function init() {
+  applyRobbPhotos();
+  renderAboutGallery();
   renderFeaturedEpisode();
   renderEpisodes();
   renderRobbOMeter();

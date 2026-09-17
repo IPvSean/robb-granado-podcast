@@ -413,6 +413,9 @@ a:hover {
 
 .hero-image {
   width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-hover);
   border: 3px solid rgba(123, 175, 212, 0.35);
@@ -841,6 +844,65 @@ a:hover {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-gallery-wrap {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--gray-border);
+}
+
+.about-gallery-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gray-muted);
+  margin: 0 0 var(--space-md);
+  font-weight: 700;
+}
+
+.about-gallery {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .about-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery-figure {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--gray-bg);
+  border: 1px solid var(--gray-border);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-figure:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.gallery-figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-figure figcaption {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.8rem;
+  color: var(--gray-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
 }
 
 /* Footer */

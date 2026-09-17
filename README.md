@@ -56,12 +56,7 @@ You do not need to edit `index.html` to add episodes.
 
 ## Replace Robb’s photos
 
-In [`index.html`](index.html), search for:
-
-- `REPLACE HERO IMAGE` — main hero artwork
-- `REPLACE ABOUT ROBB IMAGE` — About section photo
-
-Point the `src` attribute at your files under `assets/images/` (for example `assets/images/robb-hero.jpg`).
+In [`js/main.js`](js/main.js), edit **ROBB PHOTOS** (`robbPhotos.hero`, `robbPhotos.about`) and **about gallery** (`aboutGallery` array). Paths are under `assets/images/`. Hero and About `src` in `index.html` should stay in sync with `robbPhotos` if you change them there.
 
 ## Update YouTube, Spotify, and social links
 

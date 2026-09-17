@@ -12,8 +12,8 @@
   <meta property="og:title" content="ROBBCAST">
   <meta property="og:description" content="Famous people. Serious fandom. Extremely local concerns.">
   <meta property="og:site_name" content="ROBBCAST">
-  <!-- REPLACE OG IMAGE: swap og-cover.svg with assets/images/og-cover.jpg (1200×630) when ready -->
-  <meta property="og:image" content="assets/images/og-cover.svg">
+  <!-- REPLACE OG IMAGE: use a 1200×630 crop if social previews need tuning -->
+  <meta property="og:image" content="assets/images/profile_robb.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -68,13 +68,9 @@
           </div>
         </div>
         <div class="hero-art reveal">
-          <!-- ============================================================
-               REPLACE HERO IMAGE
-               Change the src below to your photo, e.g.:
-               src="assets/images/robb-hero.jpg"
-               ============================================================ -->
+          <!-- REPLACE HERO IMAGE: update src or js/main.js robbPhotos.hero -->
           <img
-            src="assets/images/hero-placeholder.svg"
+            src="assets/images/profile_robb.png"
             alt="Robb Granado — podcast host"
             class="hero-image"
             width="800"
@@ -182,13 +178,9 @@
           <p>ROBBCAST allows him to finally address the most difficult ones.</p>
         </div>
         <div class="about-photo reveal">
-          <!-- ============================================================
-               REPLACE ABOUT ROBB IMAGE
-               Change the src below to your photo, e.g.:
-               src="assets/images/robb-about.jpg"
-               ============================================================ -->
+          <!-- REPLACE ABOUT IMAGE: update src or js/main.js robbPhotos.about -->
           <img
-            src="assets/images/about-placeholder.svg"
+            src="assets/images/serious_robb.JPG"
             alt="Robb Granado"
             class="about-image"
             width="600"
@@ -197,6 +189,7 @@
           >
         </div>
       </div>
+      <div class="container about-gallery-wrap reveal" id="about-gallery" aria-label="Robb Granado photo gallery"></div>
     </section>
   </main>
 
