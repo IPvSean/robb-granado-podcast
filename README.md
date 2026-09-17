@@ -86,14 +86,15 @@ The site uses `assets/images/og-cover.svg` by default. For best social previews,
 
 ## GitHub Pages deployment
 
-1. Push this repository to GitHub (`main` branch).
-2. In the repo: **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch **`main`** and folder **`/ (root)`**.
-5. Save. After a minute or two, the site should be live at  
-   `https://<your-github-username>.github.io/robb-granado-podcast/`
+This repo is a **static site** (no build step). GitHub Pages is configured to deploy via **GitHub Actions** using [`.github/workflows/static-gh-pages.yml`](.github/workflows/static-gh-pages.yml).
 
-The empty [`.nojekyll`](.nojekyll) file keeps GitHub from processing the site with Jekyll.
+1. Push to the **`main`** branch.
+2. The **Deploy static site to GitHub Pages** workflow uploads the repo root and publishes it.
+3. Site URL: [https://ipvsean.github.io/robb-granado-podcast/](https://ipvsean.github.io/robb-granado-podcast/)
+
+In **Settings → Pages**, **Build and deployment** should show **Source: GitHub Actions** (not Jekyll). If GitHub added a Jekyll workflow when you first enabled Pages, use this static workflow instead so `index.html`, `css/`, and `js/` are served as-is.
+
+The [`.nojekyll`](.nojekyll) file at the repo root is included in the deployment artifact.
 
 ## Easter eggs (for maintainers)
 
