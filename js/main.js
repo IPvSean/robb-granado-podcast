@@ -122,7 +122,7 @@ const episodes = [
     description:
       "Robb sits down to discuss the state of Carolina football, the personalities surrounding the program, and why being a fan means caring deeply about things completely outside your control.",
     date: "March 8, 2026",
-    thumbnail: "assets/images/camo_robb.JPG",
+    thumbnail: "assets/images/ep-carolina-football-fandom.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP002",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP002",
   },
