@@ -492,54 +492,6 @@ a:hover {
   gap: var(--space-sm);
 }
 
-/* Segments */
-.segment-grid {
-  display: grid;
-  gap: var(--space-md);
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 600px) {
-  .segment-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .segment-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .segment-card-wide {
-    grid-column: span 2;
-  }
-}
-
-.segment-card {
-  background: var(--white);
-  border: 1px solid var(--gray-border);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.segment-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-}
-
-.segment-title {
-  font-size: 1.15rem;
-  margin: 0 0 var(--space-sm);
-  color: var(--navy);
-}
-
-.segment-card p {
-  margin: 0;
-  color: var(--gray-muted);
-  font-size: 0.98rem;
-}
-
 /* Robb-O-Meter */
 .meter-grid {
   display: grid;
