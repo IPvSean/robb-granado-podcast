@@ -208,7 +208,9 @@ function renderFeaturedEpisode() {
   if (!container || !episode) return;
 
   container.innerHTML = `
-    <img class="featured-thumb" src="${escapeHtml(episode.thumbnail)}" alt="" width="640" height="400" loading="lazy">
+    <div class="featured-media">
+      <img class="featured-thumb" src="${escapeHtml(episode.thumbnail)}" alt="${escapeHtml(episode.title)}" width="800" height="1000" loading="lazy">
+    </div>
     <div class="featured-body">
       <p class="episode-number">EP. ${escapeHtml(episode.number)}</p>
       <h3>${escapeHtml(episode.title)}</h3>
@@ -229,7 +231,7 @@ function renderEpisodes() {
     .map(
       (ep) => `
     <article class="episode-card reveal" id="${escapeHtml(ep.id)}">
-      <img class="episode-thumb" src="${escapeHtml(ep.thumbnail)}" alt="" width="640" height="360" loading="lazy">
+      <img class="episode-thumb" src="${escapeHtml(ep.thumbnail)}" alt="${escapeHtml(ep.title)}" width="800" height="800" loading="lazy">
       <div class="episode-card-body">
         <p class="episode-number">EP. ${escapeHtml(ep.number)}</p>
         <h3>${escapeHtml(ep.title)}</h3>
