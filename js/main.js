@@ -129,11 +129,11 @@ const episodes = [
   {
     id: "ep-001",
     number: "001",
-    title: "Can Chapel Hill Fix This Intersection?",
+    title: "All About Hair",
     description:
-      "Engineering, politics, and the eternal question of why left turns feel personally offensive.",
+      "FUE, flops, and everything in between. Robb covers hairlines, transplants, products, whether bald is a vibe, and the questions everyone is already asking the internet.",
     date: "March 1, 2026",
-    thumbnail: "assets/images/fish_robb.jpg",
+    thumbnail: "assets/images/ep-all-about-hair.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP001",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP001",
   },
