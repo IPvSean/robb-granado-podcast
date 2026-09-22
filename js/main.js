@@ -26,7 +26,7 @@ const socialLinks = {
 // ROBB PHOTOS — UPDATE PATHS HERE
 // ==============================
 const robbPhotos = {
-  hero: "assets/images/profile_robb.png",
+  hero: "assets/images/robbcast-studio-hero.jpg",
   about: "assets/images/serious_robb.JPG",
 };
 
