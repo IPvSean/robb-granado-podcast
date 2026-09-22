@@ -111,7 +111,7 @@ const episodes = [
     description:
       "A thoughtful look at recreational infrastructure, missed opportunities, and whether enthusiasm alone can justify more cables in the sky.",
     date: "March 22, 2026",
-    thumbnail: "assets/images/nirvana_robb.jpg",
+    thumbnail: "assets/images/ep-zip-line-problem.jpg",
     watchUrl: "https://www.youtube.com/watch?v=PLACEHOLDER_EP003",
     listenUrl: "https://open.spotify.com/episode/PLACEHOLDER_EP003",
   },
